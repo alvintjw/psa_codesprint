@@ -17,7 +17,7 @@
 ```bash
  cd backend
  npm install
- npm start dev
+ npm run dev
 ```
 
 ## Pick any email/password in backend/src/populateUser.ts to login
