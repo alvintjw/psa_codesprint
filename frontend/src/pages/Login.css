@@ -1,0 +1,109 @@
+/* Ensure the login form is always centered and responsive */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure the container takes up the full height */
+  background-color: #f4f4f9;
+  padding: 20px; /* Add padding to account for smaller screen sizes */
+}
+
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%; /* Ensures it takes up the full width on smaller screens */
+  margin: 0 20px; /* Add margin to avoid the form touching the edges on smaller screens */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .login-box {
+    padding: 30px;
+    max-width: 100%; /* Take up more space on smaller screens */
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .input-group input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .login-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 20px;
+    margin: 0 10px; /* Add more margin to prevent touching the screen edges */
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .input-group input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .login-button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
